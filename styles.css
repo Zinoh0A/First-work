@@ -1,0 +1,66 @@
+
+h1, p, .controls {
+    text-align: center;
+}
+
+.square {
+    width: 300px;
+    height: 300px;
+    background-color: #CCCCFF;
+    margin: 20px auto;
+    border-radius: 15px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#red:checked ~ .square {
+    background-color: red;
+}
+#blue:checked ~ .square {
+    background-color: blue;
+}
+#green:checked ~ .square {
+    background-color: green;
+}
+#reset:checked ~ .square {
+    background-color: #CCCCFF;
+}
+label.color{
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #ddd;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+label[for="red"]{
+    color:red;
+}
+label[for="blue"]{
+    color:blue;
+}
+label[for="green"]{
+    color:green;
+}
+label.reset{
+    text-decoration-line:underline;
+    color:purple;
+}
+#red:hover + label {
+    background-color: red;
+    color: white;
+}
+#blue:hover + label {
+    background-color: blue;
+    color: white;
+}
+#green:hover + label {
+    background-color: green;
+    color: white;
+}
+#reset:hover + label {
+    text-decoration-line:underline;
+    color:#CCCCFF;
+}
